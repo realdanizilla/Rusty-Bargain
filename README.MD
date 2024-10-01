@@ -1,5 +1,22 @@
 # README.md
 
+# Table of Contents
+
+- [README.md](#readmemd)
+- [Table of Contents](#table-of-contents)
+  - [Project Objective](#project-objective)
+  - [Project Structure and Steps](#project-structure-and-steps)
+  - [Tools and Techniques Utilized](#tools-and-techniques-utilized)
+  - [Specific Results and Outcomes](#specific-results-and-outcomes)
+    - [1. Data Exploration and Preprocessing](#1-data-exploration-and-preprocessing)
+    - [2. Model Training and Evaluation](#2-model-training-and-evaluation)
+    - [3. Model Speed and Performance Analysis](#3-model-speed-and-performance-analysis)
+    - [4. Hyperparameter Tuning](#4-hyperparameter-tuning)
+    - [5. Final Model Selection](#5-final-model-selection)
+    - [Key Insights](#key-insights)
+  - [What I Have Learned From This Project](#what-i-have-learned-from-this-project)
+
+
 ## Project Objective
 Rusty Bargain is developing a mobile application to estimate the market value of used cars. The aim of this project is to build a machine learning model to accurately predict car prices based on historical data, technical specifications, and trim levels. The primary goals are to optimize the model for:
 - Prediction quality
