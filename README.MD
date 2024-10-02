@@ -18,11 +18,13 @@
   - [What I Have Learned From This Project](#what-i-have-learned-from-this-project)
 
 
-## Project Objective
+## Project Objective 
 Rusty Bargain is developing a mobile application to estimate the market value of used cars. The aim of this project is to build a machine learning model to accurately predict car prices based on historical data, technical specifications, and trim levels. The primary goals are to optimize the model for:
 - Prediction quality
 - Speed of prediction
 - Time required for training
+
+[back to top](#table-of-contents)
 
 ## Project Structure and Steps
 1. **Data Loading and Exploration**
@@ -47,11 +49,15 @@ Rusty Bargain is developing a mobile application to estimate the market value of
    - Fine-tune hyperparameters to improve performance.
    - Compare boosting algorithms with random forests and other simpler models.
 
+[back to top](#table-of-contents)
+
 ## Tools and Techniques Utilized
 - **Python Libraries**: `pandas`, `scikit-learn`, `LightGBM`, `CatBoost`, `XGBoost`
 - **Model Evaluation Metrics**: RMSE, training time, and prediction speed
 - **Data Preprocessing Techniques**: Handling missing values, encoding categorical features, and scaling data
 - **Machine Learning Models**: Linear Regression, Decision Tree, Random Forest, Gradient Boosting (LightGBM, CatBoost, XGBoost)
+
+[back to top](#table-of-contents)
 
 ## Specific Results and Outcomes
 
@@ -109,6 +115,8 @@ Rusty Bargain is developing a mobile application to estimate the market value of
 - **Gradient Boosting Superiority**: Gradient boosting models (especially LightGBM and CatBoost) performed better than simpler models like linear regression and random forests.
 - **Trade-offs Between Accuracy and Speed**: While boosting models provided high accuracy, they also required more time for training. LightGBM stood out as a balanced choice.
 
+[back to top](#table-of-contents)
+
 ## What I Have Learned From This Project 
 
 - **Modeling and Evaluation**: Gained experience in training multiple models, evaluating them using RMSE, and understanding the trade-offs between various machine learning algorithms.
@@ -123,3 +131,5 @@ Rusty Bargain is developing a mobile application to estimate the market value of
     - **Truncation**: Capped extreme data points based on certain thresholds to reduce the impact of outliers.
     - **Censoring Techniques**: Used for cases where data is only partially observed, helping to improve prediction accuracy by handling such scenarios effectively.
   - Implemented these techniques to achieve better model performance by making feature distributions more suitable for modeling.
+
+[back to top](#table-of-contents)
