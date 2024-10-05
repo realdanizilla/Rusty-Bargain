@@ -9,12 +9,6 @@
   - [Project Structure and Steps](#project-structure-and-steps)
   - [Tools and Techniques Utilized](#tools-and-techniques-utilized)
   - [Specific Results and Outcomes](#specific-results-and-outcomes)
-    - [1. Data Exploration and Preprocessing](#1-data-exploration-and-preprocessing)
-    - [2. Model Training and Evaluation](#2-model-training-and-evaluation)
-    - [3. Model Speed and Performance Analysis](#3-model-speed-and-performance-analysis)
-    - [4. Hyperparameter Tuning](#4-hyperparameter-tuning)
-    - [5. Final Model Selection](#5-final-model-selection)
-    - [Key Insights](#key-insights)
   - [What I Have Learned From This Project](#what-i-have-learned-from-this-project)
   - [How to use this repository](#how-to-use-this-repository)
 
@@ -62,13 +56,13 @@ Rusty Bargain is developing a mobile application to estimate the market value of
 
 ## Specific Results and Outcomes
 
-### 1. Data Exploration and Preprocessing
+**1. Data Exploration and Preprocessing**
 - The dataset contained **13 features**, including both categorical (e.g., `VehicleType`, `Brand`) and numerical variables (e.g., `Power`, `Mileage`).
 - No missing or duplicate values were found, and the initial data quality was generally high.
 - After analyzing the features, **outliers** in certain columns (such as `Power` and `RegistrationYear`) were handled to improve model training.
 - Categorical features were encoded using **One-Hot Encoding (OHE)** to allow models to process non-numeric data.
 
-### 2. Model Training and Evaluation
+**2. Model Training and Evaluation**
 - **Linear Regression**: Used as a baseline model to understand how simple the relationship between features and the target (`Price`) is.
   - **RMSE**: Around **3400 Euros**, indicating moderate error for this basic model.
   - **Training Time**: Very low; linear regression models are quick to train.
@@ -94,7 +88,7 @@ Rusty Bargain is developing a mobile application to estimate the market value of
     - Performed comparably to LightGBM but took longer to train.
   - **Comparison to Baseline**: All boosting models demonstrated significant improvement in prediction accuracy over linear regression and random forests.
 
-### 3. Model Speed and Performance Analysis
+**3. Model Speed and Performance Analysis**
 - **Training Time**: 
   - Linear regression was the fastest to train, followed by decision trees and random forests.
   - **LightGBM** had the best training speed among gradient boosting models.
@@ -103,15 +97,15 @@ Rusty Bargain is developing a mobile application to estimate the market value of
   - All gradient boosting models were efficient in making predictions after being trained.
   - LightGBM offered the best trade-off between training time and prediction accuracy.
 
-### 4. Hyperparameter Tuning
+**4. Hyperparameter Tuning**
 - Random forests and gradient boosting models were tuned for `max_depth`, `n_estimators`, and learning rates.
 - Tuning significantly improved the RMSE of models, especially for gradient boosting algorithms.
 
-### 5. Final Model Selection
+**5. Final Model Selection**
 - Based on the **RMSE** scores, **training time**, and **prediction speed**, the **LightGBM** model was chosen as the final model.
 - The model achieved an RMSE of around **1800 Euros**, making it both accurate and efficient for predicting car prices.
 
-### Key Insights
+**Key Insights**
 - **Importance of Data Preprocessing**: Handling outliers and encoding categorical data were crucial for model performance.
 - **Gradient Boosting Superiority**: Gradient boosting models (especially LightGBM and CatBoost) performed better than simpler models like linear regression and random forests.
 - **Trade-offs Between Accuracy and Speed**: While boosting models provided high accuracy, they also required more time for training. LightGBM stood out as a balanced choice.
@@ -142,12 +136,13 @@ git clone https://github.com/realdanizilla/Rusty-Bargain.git
 2. **Install Dependencies:**  
 Navigate to the repository directory and install required Python packages. <Br>
 (cd Rusty-Bargain pip install -r requirements.txt)
-3. **Run the Jupyter Notebook:**<br>
-Open the `.ipynb` notebook for data analysis and exploration.
-4. **Explore the Data**:  
-Follow through the notebook to see data preprocessing, analysis, and model building for predicting Instacart basket compositions. 
 
-5. **Customize and Experiment**:  
-Modify code sections to test different models or analysis techniques as desired.
+3. **Run the Jupyter Notebook**  
+Open the `.ipynb` notebook for data analysis, preprocessing, and model training.
+
+
+4. **Modify and Experiment**  
+Explore the data processing steps and model-building techniques in the notebook to test and optimize predictions.
+
 
 [back to top](#rusty-bargain-used-cars-analysis)
