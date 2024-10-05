@@ -1,9 +1,9 @@
-# README.md
+# Rusty Bargain Used Cars Analysis
 
 # Table of Contents
 
 
-- [README.md](#readmemd)
+- [Rusty Bargain Used Cars Analysis](#rusty-bargain-used-cars-analysis)
 - [Table of Contents](#table-of-contents)
   - [Project Objective](#project-objective)
   - [Project Structure and Steps](#project-structure-and-steps)
@@ -16,6 +16,7 @@
     - [5. Final Model Selection](#5-final-model-selection)
     - [Key Insights](#key-insights)
   - [What I Have Learned From This Project](#what-i-have-learned-from-this-project)
+  - [How to use this repository](#how-to-use-this-repository)
 
 
 ## Project Objective 
@@ -24,7 +25,7 @@ Rusty Bargain is developing a mobile application to estimate the market value of
 - Speed of prediction
 - Time required for training
 
-[back to top](#table-of-contents)
+[back to top](#rusty-bargain-used-cars-analysis)
 
 ## Project Structure and Steps
 1. **Data Loading and Exploration**
@@ -49,7 +50,7 @@ Rusty Bargain is developing a mobile application to estimate the market value of
    - Fine-tune hyperparameters to improve performance.
    - Compare boosting algorithms with random forests and other simpler models.
 
-[back to top](#table-of-contents)
+[back to top](#rusty-bargain-used-cars-analysis)
 
 ## Tools and Techniques Utilized
 - **Python Libraries**: `pandas`, `scikit-learn`, `LightGBM`, `CatBoost`, `XGBoost`
@@ -57,7 +58,7 @@ Rusty Bargain is developing a mobile application to estimate the market value of
 - **Data Preprocessing Techniques**: Handling missing values, encoding categorical features, and scaling data
 - **Machine Learning Models**: Linear Regression, Decision Tree, Random Forest, Gradient Boosting (LightGBM, CatBoost, XGBoost)
 
-[back to top](#table-of-contents)
+[back to top](#rusty-bargain-used-cars-analysis)
 
 ## Specific Results and Outcomes
 
@@ -115,7 +116,7 @@ Rusty Bargain is developing a mobile application to estimate the market value of
 - **Gradient Boosting Superiority**: Gradient boosting models (especially LightGBM and CatBoost) performed better than simpler models like linear regression and random forests.
 - **Trade-offs Between Accuracy and Speed**: While boosting models provided high accuracy, they also required more time for training. LightGBM stood out as a balanced choice.
 
-[back to top](#table-of-contents)
+[back to top](#rusty-bargain-used-cars-analysis)
 
 ## What I Have Learned From This Project 
 
@@ -132,4 +133,21 @@ Rusty Bargain is developing a mobile application to estimate the market value of
     - **Censoring Techniques**: Used for cases where data is only partially observed, helping to improve prediction accuracy by handling such scenarios effectively.
   - Implemented these techniques to achieve better model performance by making feature distributions more suitable for modeling.
 
-[back to top](#table-of-contents)
+[back to top](#rusty-bargain-used-cars-analysis)
+
+## How to use this repository
+
+1. **Clone the repository** <br>
+git clone https://github.com/realdanizilla/Rusty-Bargain.git
+2. **Install Dependencies:**  
+Navigate to the repository directory and install required Python packages. <Br>
+(cd Rusty-Bargain pip install -r requirements.txt)
+3. **Run the Jupyter Notebook:**<br>
+Open the `.ipynb` notebook for data analysis and exploration.
+4. **Explore the Data**:  
+Follow through the notebook to see data preprocessing, analysis, and model building for predicting Instacart basket compositions. 
+
+5. **Customize and Experiment**:  
+Modify code sections to test different models or analysis techniques as desired.
+
+[back to top](#rusty-bargain-used-cars-analysis)
